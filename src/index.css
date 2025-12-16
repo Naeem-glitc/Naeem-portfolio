@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
 
 html,
@@ -63,7 +63,14 @@ body {
 
 @layer components {
   .icon {
-    @apply p-1 hover:bg-gray-200 rounded hover:cursor-default;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    cursor: default;
+  }
+
+  .icon:hover {
+    background-color: #e5e7eb;
+    cursor: default;
   }
 
   #welcome {
